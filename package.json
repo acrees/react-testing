@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register component_test.jsx"
+    "test": "mocha --require setup.js --compilers js:babel-core/register component_test.jsx"
   },
   "author": "",
   "license": "MIT",
@@ -16,10 +16,13 @@
     "babel-preset-react": "^6.16.0",
     "chai": "^3.5.0",
     "enzyme": "^2.7.0",
+    "jsdom": "^9.9.1",
     "mocha": "^3.2.0",
     "react": "^15.4.1",
     "react-addons-test-utils": "^15.4.1",
     "react-dom": "^15.4.1",
+    "react-redux": "^5.0.1",
+    "redux": "^3.6.0",
     "webpack": "^1.14.0"
   }
 }
